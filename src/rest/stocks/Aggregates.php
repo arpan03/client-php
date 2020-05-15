@@ -11,9 +11,9 @@ class Aggregates extends RestResource {
 
     protected function mapper($response)
     {
-        $response['results'] = array_map(function ($result) {
-            return Mappers::snapshotAggV2($result);
-        }, $response['results']);
+//        $response['results'] = array_map(function ($result) {
+//            return Mappers::snapshotAggV2($result);
+//        }, $response['results']);
         return $response;
     }
 }
