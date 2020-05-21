@@ -6,9 +6,9 @@ use PolygonIO\rest\RestResource;
 class HistoricQuotesV2 extends RestResource {
     protected $defaultParams = [
     ];
-    public function get($tickerSymbol, $date) {
-        return $this->_get('/v2/ticks/stocks/nbbo/'.$tickerSymbol.'/'.$date);
-    }
+	public function get($tickerSymbol, $date,$param=[]) {
+		return $this->_get('/v2/ticks/stocks/nbbo/'.$tickerSymbol.'/'.$date,$param);
+	}
 
     protected function mapper($response)
     {
