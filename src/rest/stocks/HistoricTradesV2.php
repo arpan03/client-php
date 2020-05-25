@@ -6,8 +6,8 @@ use PolygonIO\rest\RestResource;
 class HistoricTradesV2 extends RestResource {
     protected $defaultParams = [
     ];
-    public function get($tickerSymbol, $date) {
-        return $this->_get('/v2/ticks/stocks/trades/'.$tickerSymbol.'/'.$date);
+    public function get($tickerSymbol, $date,$param=[]) {
+        return $this->_get('/v2/ticks/stocks/trades/'.$tickerSymbol.'/'.$date,$param);
     }
 
     protected function mapper($response)
