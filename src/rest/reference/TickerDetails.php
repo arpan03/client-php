@@ -17,8 +17,8 @@ class TickerDetails extends RestResource {
     }
 
     protected function mapper($response) {
-        $response['legalEntityIdentifier'] = $response['lei'];
-        $response['standardIndustryClassification'] = $response['sic'];
+//        $response['legalEntityIdentifier'] = $response['lei'];
+//        $response['standardIndustryClassification'] = $response['sic'];
         return $response;
     }
 }
