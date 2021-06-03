@@ -8,11 +8,10 @@ use PolygonIO\rest\RestResource;
  * @package PolygonIO\rest\reference
  */
 class Tickers extends RestResource {
-    public $route = '/v2/reference/tickers';
+    public $route = '/v3/reference/tickers';
     protected $defaultParams = [
         'sort' => 'ticker',
-        'perPage' => 50,
-        'page' => 1,
+        'limit' => 50
     ];
 
     /**
